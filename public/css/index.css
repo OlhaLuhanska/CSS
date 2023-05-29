@@ -1,10 +1,31 @@
-html {
-  max-width: 1300px;
+/*супер глобальні стилі для всієї сторінки*/
+:root {
+  background: purple;
 }
 
+/*стилі для всієї сторінки, якщо немає root*/
+html {
+  max-width: 1300px;
+  background: lightcoral;
+}
+
+/*стилі для робочої області сторінки*/
 body {
   margin: 32px;
-  background: #fff;
+  background: #cc1875;
+}
+
+* {
+  color: black;
+}
+
+h1 {
+  color: pink;
+}
+
+/*замінить попередні стилі для тегу h1*/
+h1 {
+  color: greenyellow;
 }
 
 main,
@@ -16,4 +37,115 @@ nav {
 
 section {
   padding: 16px;
+}
+
+.box {
+  background: #8c8b8b;
+}
+/*стилі по ID більш приоритетні ніж інші не важливо в якій послідовності написані*/
+#user {
+  color: lightgoldenrodyellow;
+}
+/*комбінації ідентифікаторів у стилях більш важливі - чим більше деталізації, тим важливіше */
+/* > вказує на дитячі теги */
+section > p {
+  color: paleturquoise;
+}
+li:first-child {
+  color: blueviolet;
+}
+li:last-child {
+  color: yellowgreen;
+}
+li:only-child {
+  color: green;
+}
+.item:first-of-type {
+  color: violet;
+}
+.item:last-of-type {
+  color: goldenrod;
+}
+
+.item:only-of-type {
+  color: blue;
+}
+
+.item:nth-child(9) {
+  color: green;
+}
+
+p:not(.big) {
+  color: purple;
+}
+
+p:empty {
+  height: 20px;
+  background: yellow;
+}
+
+.card-dark {
+  background: rgb(1, 40, 1);
+}
+
+.input-dark {
+  background: rgb(1, 68, 1);
+}
+
+.input-dark[required] {
+  background: rgb(80, 207, 80);
+}
+
+.input-dark[type='number'] {
+  background: rgb(4, 61, 75);
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+.card[class~='img'] {
+  height: 500px;
+}
+
+button[class|='btn'] {
+  background: rgb(80, 207, 80);
+  margin-bottom: 10px;
+}
+
+a[class^='btn'] {
+  background: rgb(143, 16, 155);
+  margin-bottom: 10px;
+}
+
+button[class*='star'] {
+  background: rgb(11, 111, 153);
+  margin-bottom: 10px;
+}
+
+button[class$='heart'] {
+  background: rgb(153, 44, 11);
+  margin-bottom: 10px;
+}
+
+.btn::first-letter {
+  color: #cc1875;
+}
+
+.big-text::first-line {
+  color: #cc1875;
+}
+
+.input-black::placeholder {
+  color: red;
+}
+
+.big-text-b::before {
+  content: '$$$';
+  color: white;
+}
+
+.big-text-b::after {
+  content: '$$$';
+  color: rgb(193, 215, 22);
 }
