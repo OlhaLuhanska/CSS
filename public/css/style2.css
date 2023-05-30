@@ -6,7 +6,10 @@
 #test:target {
   color: red;
 }
-.link.link {
+.link:link {
+  color: yellowgreen;
+}
+.link:visited {
   color: yellowgreen;
 }
 .link:hover {

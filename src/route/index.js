@@ -3884,6 +3884,16 @@ router.get('/css3', function (req, res) {
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
+
+router.get('/homeworkCSS2', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('homeworkCSS2', {
+    layout: 'css_homework2',
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
 // ================================================================
 
 // Підключаємо роутер до бек-енду
