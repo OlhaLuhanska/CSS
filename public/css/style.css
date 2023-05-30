@@ -1,4 +1,223 @@
+/* 1 */
+:root {
+  background: white;
+}
+
+/* 2 */
+html {
+  color: black;
+}
+
+/* 3 */
 h1 {
   background: blue;
+}
+
+/* 4 */
+.green {
+  color: green;
+}
+
+/* 5 */
+#blue {
+  color: blue;
+}
+
+/* 6 */
+div.box > div {
+  background: green;
+}
+
+div.box > p {
+  background: red;
+}
+
+/* 7 */
+.brown {
+  background: brown;
+  color: white;
+}
+
+/* 8 */
+ul > li {
+  background: red;
+}
+
+/* 9 */
+button.header-button + span {
+  background: red;
+}
+
+/* 10 */
+p.susid ~ p {
+  background: blue;
+  color: white;
+}
+
+/* 11 */
+.salo,
+#bread {
+  background: yellow;
+}
+
+/*  Урок 2  */
+/* 1 */
+
+div.first-task > ul > li {
+  background: white;
+}
+
+div.first-task > ul > li:first-child {
+  color: white;
+}
+
+/* 2 */
+
+div.second-task > ul > li {
+  background: white;
+}
+
+div.second-task > ul:first-child > li:first-child {
   color: yellow;
+}
+
+/* 3 */
+
+div.third-task > ul > li {
+  background: white;
+}
+
+div.third-task > ul:last-child > li:first-child {
+  background: yellow;
+}
+
+/* 4 */
+
+div.four-task > ul > li {
+  background: white;
+}
+
+div.four-task > ul > li:last-child {
+  background: yellow;
+}
+
+/* 5 */
+
+div.five-task > ul > li {
+  background: white;
+}
+
+div.five-task > ul:last-child > li:last-child {
+  color: white;
+}
+
+/* 6 */
+
+div.only-child-task > div:only-child {
+  color: red;
+}
+
+/* 7 */
+div.seven-task > p:first-of-type {
+  background: red;
+}
+
+/* 8 */
+div.eight-task > p:last-of-type {
+  background: red;
+}
+
+/* 9 */
+div.text-wrapper > p:only-of-type {
+  background: yellow;
+}
+
+/*  Урок 3  */
+/* 1 */
+
+a[href] {
+  color: white;
+}
+
+/* 2 */
+
+ol.lesson-three-task-two > li[value] {
+  color: yellow;
+}
+
+/* 3 */
+
+ol.lesson-three-task-three > li[value='3'] {
+  background: red;
+}
+
+/* 4 */
+
+div.lesson-three-task-four > button[class~='primary'] {
+  background: blue;
+}
+
+/* 5 */
+
+div.lesson-three-task-five > button[class^='secondary'] {
+  background: red;
+}
+
+/* 6 */
+
+div.lesson-three-task-six > ul > li[class^='b'] {
+  background: white;
+  color: green;
+}
+
+/* 7 */
+
+div.lesson-three-task-seven > ul > li[class*='on'] {
+  background: white;
+  color: green;
+}
+
+/* 8 */
+
+div.lesson-three-task-eight > ul > li > span[class$='s'] {
+  background: white;
+  color: blue;
+}
+
+/* 9 */
+
+div.lesson-three-task-nine > h2::first-letter {
+  color: red;
+}
+
+/* 10 */
+
+div.lesson-three-task-ten > p::first-line {
+  background: yellow;
+}
+
+/* 11 */
+
+div.lesson-three-task-eleven > input::placeholder {
+  background: red;
+}
+
+/* 12 */
+
+div.lesson-three-task-twelve > ul > li {
+  background: white;
+}
+
+div.lesson-three-task-twelve > ul > li::before {
+  content: '➤';
+}
+
+/* 13 */
+
+div.lesson-three-task-thirteen > ul > li {
+  background: white;
+}
+
+div.lesson-three-task-thirteen > ul > li::after {
+  content: '➤';
 }
