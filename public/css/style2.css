@@ -1,0 +1,74 @@
+.card-dark {
+  background: rgb(94, 94, 94);
+}
+
+/* змінює стиль цільвого елемента вже після перенаправлення на нього */
+#test:target {
+  color: red;
+}
+.link.link {
+  color: yellowgreen;
+}
+.link:hover {
+  color: green;
+}
+.hover:hover {
+  background: green;
+}
+.card:active {
+  background: pink;
+}
+input {
+  background-color: gray;
+}
+input:focus {
+  background-color: purple;
+}
+.card:focus-within {
+  background: pink;
+}
+.card:lang(en) {
+  background: violet;
+}
+.card:lang(fr) {
+  background: plum;
+}
+button {
+  background-color: blueviolet;
+}
+button:enabled {
+  background-color: purple;
+}
+button:disabled {
+  background-color: lightcoral;
+}
+.inp:read-write {
+  background: burlywood;
+}
+.inp:read-only {
+  background: orange;
+}
+input[type='checkbox']:checked ~ span {
+  background: orchid;
+}
+.valid:valid {
+  background: yellow;
+}
+.valid:invalid {
+  background: goldenrod;
+}
+.valid:optional {
+  background: yellowgreen;
+}
+.number:focus {
+  background: pink;
+}
+.number:out-of-range {
+  background: palevioletred;
+}
+.number:in-range {
+  background: yellowgreen;
+}
+input:placeholder-shown ~ span {
+  background: orchid;
+}
