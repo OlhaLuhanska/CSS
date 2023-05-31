@@ -1,0 +1,73 @@
+/*rgba визначення кольору з вказуванням прозорості*/
+.card > p {
+  color: rgba(199, 41, 146, 0.9);
+}
+
+.webkit {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+
+.start > p:hover {
+  direction: rtl;
+}
+
+/*встановлює дефолтні значення*/
+#test {
+  color: initial;
+}
+
+/*успадковує батьківські стилі*/
+
+.card {
+  color: rgb(54, 109, 187);
+}
+#test2 {
+  color: inherit;
+}
+/*успадковує батьківські стилі, але якщо вони не встановлені, то дефолтні*/
+#test3 {
+  color: unset;
+}
+/*скидає всі встановлені стилі і виставляє за замовчуванням*/
+.none {
+  border: none;
+}
+
+.orientation > p.vertical {
+  writing-mode: vertical-lr;
+}
+.orientation > p#test {
+  writing-mode: vertical-rl;
+  text-decoration: underline solid red;
+}
+.orientation > p#test2 {
+  writing-mode: horizontal-tb; /*дефолтне значення*/
+  text-decoration: underline wavy rgb(0, 255, 89);
+}
+.orientation > p {
+  text-align: center;
+}
+.orientation > p#test3 {
+  text-align: right;
+  text-decoration: overline double rgb(0, 255, 55);
+}
+.orientation > p#test4 {
+  text-align: start;
+  letter-spacing: 0.4em; /*em замість знака % щоб не вказувати конкретну кількість пікселів*/
+}
+.orientation > p#test5 {
+  text-align: end;
+  letter-spacing: 20px;
+  text-decoration: line-through dotted rgb(255, 0, 251);
+}
+.orientation > p#test6 {
+  text-align: justify;
+  text-transform: uppercase;
+  text-decoration: overline dashed rgb(0, 255, 55);
+}
+/*в кількості пробілів замість px*/
+.orientation > pre.pre2 {
+  tab-size: 10;
+}
