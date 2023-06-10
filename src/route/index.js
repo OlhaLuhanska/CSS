@@ -3886,14 +3886,14 @@ router.get('/css3', function (req, res) {
 })
 
 router.get('/homeworkCSS1', function (req, res) {
-	// res.render генерує нам HTML сторінку
-  
-	//            ↙ cюди вводимо назву файлу з сontainer
-	res.render('homeworkCSS1', {
-	  layout: 'css_homework',
-	})
-	//                  ↑↑ сюди вводимо JSON дані
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('homeworkCSS1', {
+    layout: 'css_homework',
   })
+  //                  ↑↑ сюди вводимо JSON дані
+})
 
 router.get('/homeworkCSS2', function (req, res) {
   // res.render генерує нам HTML сторінку
@@ -3914,6 +3914,7 @@ router.get('/lesson8CSS', function (req, res) {
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
+
 // ================================================================
 
 // Підключаємо роутер до бек-енду

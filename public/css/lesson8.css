@@ -22,9 +22,12 @@
 
 .card {
   color: rgb(54, 109, 187);
+  border-left: 1px solid blueviolet;
+  border-radius: 50px;
 }
 #test2 {
   color: inherit;
+  text-shadow: 200px 2px 2px purple;
 }
 /*успадковує батьківські стилі, але якщо вони не встановлені, то дефолтні*/
 #test3 {
@@ -52,6 +55,7 @@
 .orientation > p#test3 {
   text-align: right;
   text-decoration: overline double rgb(0, 255, 55);
+  font-size: 16px;
 }
 .orientation > p#test4 {
   text-align: start;
@@ -61,13 +65,19 @@
   text-align: end;
   letter-spacing: 20px;
   text-decoration: line-through dotted rgb(255, 0, 251);
+  font-size: large;
 }
 .orientation > p#test6 {
   text-align: justify;
   text-transform: uppercase;
   text-decoration: overline dashed rgb(0, 255, 55);
+  font-size: xx-small;
 }
 /*в кількості пробілів замість px*/
 .orientation > pre.pre2 {
   tab-size: 10;
 }
+
+/*font-family:
+font-weight:lighter, 400px, 700px, bolder..., 
+font-display: auto, block, swap, fallback, optional*/
