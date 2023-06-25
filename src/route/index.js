@@ -4286,6 +4286,16 @@ router.get('/template-2', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
+router.get('/css_p_1', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('css_p_1', {
+    layout: 'css_p_1',
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
 //           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/template-3', function (req, res) {
   // res.render генерує нам HTML сторінку
